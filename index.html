@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width ,initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+           <!-- Container that displays High Score, Current Score, and Time -->
+            <div class="infos">
+                <!-- High Score display -->
+                <div class="info">
+                    <h3>High Score: <span class="highScore">0</span></h3>
+                </div>
+                <!-- Current Score display -->
+                <div class="info">
+                    <h3>Score: <span class="score">0</span></h3>
+                </div>
+                <!-- Game timer display -->
+                <div class="info">
+                    <h3>Time: <span class="time">00:00</span></h3>
+                </div>
+            </div>
+            <!-- Game board where the snake and food will be rendered -->
+            <div class="board"> </div>
+
+            <!-- Popup/modal shown at game start and game over -->
+            <div class="modal">
+                <!-- Start screen -->
+                <div class="game-start">
+                    <h3>Enjoy The Game</h3>
+                    <!-- Button to start the game -->
+                    <button class="btn start-btn">Start Game</button>
+                </div>
+                <!-- Restart screen shown after game over -->
+                <div class="game-restart">
+                    <h3>Game Over</h3>
+                    <!-- Button to restart the game -->
+                    <button class="btn restart-btn">Play Again</button>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <script src="main.js"></script>
+</body>
+</html>
